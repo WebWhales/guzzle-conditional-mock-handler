@@ -1,0 +1,35 @@
+{
+    "name": "webwhales/guzzle-conditional-mock-handler",
+    "description": "Offers a way to conditionally load mock responses instead of a fixed queue",
+    "license": "MIT",
+    "homepage": "https://github.com/WebWhales/guzzle-conditional-mock-handler",
+    "authors": [
+        {
+            "name": "Ronald Edelschaap",
+            "homepage": "https://webwhales.nl",
+            "email": "ronald.edelschaap@webwhales.nl",
+            "role": "Developer"
+        }
+    ],
+    "keywords": ["guzzle", "http", "mocking"],
+    "autoload": {
+        "psr-4": {
+            "WebWhales\\GuzzleConditionalMockHandler\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WebWhales\\GuzzleConditionalMockHandler\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": "^7.2",
+        "guzzlehttp/guzzle": "~6.0|~7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~8.0"
+    },
+    "support": {
+        "issues": "https://github.com/WebWhales/guzzle-conditional-mock-handler/issues"
+    }
+}
