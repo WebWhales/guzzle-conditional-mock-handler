@@ -3,6 +3,15 @@
 This is a package that offers a way to load mock responses conditionally based on the URL, instead of a fixed queue.
 
 
+## Installation
+
+Install this package using composer:
+
+```
+compose require-dev webwhales/guzzle-conditional-mock-handler
+```
+
+
 ## Simple Example
 
 To use this Conditional Mock Handler, use the following example:
