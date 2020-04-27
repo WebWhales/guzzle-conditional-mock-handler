@@ -1,6 +1,6 @@
 {
     "name": "webwhales/guzzle-conditional-mock-handler",
-    "description": "Offers a way to conditionally load mock responses instead of a fixed queue",
+    "description": "Offers a way to load mocked responses conditionally with Guzzle instead of a fixed queue",
     "license": "MIT",
     "homepage": "https://github.com/WebWhales/guzzle-conditional-mock-handler",
     "authors": [

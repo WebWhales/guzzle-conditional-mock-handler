@@ -20,9 +20,9 @@ use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
 
 /**
- * Class GuzzleMockHandler
+ * Class Handler
  *
- * @package Tests\Helpers
+ * @package WebWhales\GuzzleConditionalMockHandler
  */
 class Handler
 {
@@ -222,7 +222,7 @@ class Handler
     }
 
     /**
-     * Create a
+     * Initialize a Mock Handler for a Guzzle Client
      *
      * @param \GuzzleHttp\Client|null $client
      * @param array                   $config

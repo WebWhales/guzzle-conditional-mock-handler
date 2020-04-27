@@ -25,8 +25,10 @@ class MockHandlerAdvancedRegexUrlTest extends MockHandlerTestCase
      */
     public function Should_UseMockResponse_When_UrlMatchesAdvancedRegexPattern()
     {
-        /*
+        /**
          * Prepare the test
+         *
+         * @var \GuzzleHttp\Client $client
          */
         $client      = null;
         $mockHandler = $this->getMockHandler($client);

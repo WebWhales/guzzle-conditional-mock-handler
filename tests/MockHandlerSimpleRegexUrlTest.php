@@ -25,8 +25,10 @@ class MockHandlerSimpleRegexUrlTest extends MockHandlerTestCase
      */
     public function Should_UseMockResponse_When_UrlMatchesSimpleRegexPattern()
     {
-        /*
+        /**
          * Prepare the test
+         *
+         * @var \GuzzleHttp\Client $client
          */
         $client      = null;
         $mockHandler = $this->getMockHandler($client);
