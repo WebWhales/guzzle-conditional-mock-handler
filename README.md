@@ -8,7 +8,7 @@ This is a package that offers a way to load mock responses conditionally based o
 Install this package using composer:
 
 ```
-composer require-dev webwhales/guzzle-conditional-mock-handler
+composer require --dev webwhales/guzzle-conditional-mock-handler
 ```
 
 
