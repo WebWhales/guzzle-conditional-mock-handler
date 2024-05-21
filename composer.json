@@ -11,6 +11,9 @@
             "role": "Developer"
         }
     ],
+    "scripts": {
+        "test": "phpunit"
+    },
     "keywords": ["guzzle", "http", "mocking"],
     "autoload": {
         "psr-4": {
