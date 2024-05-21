@@ -70,7 +70,7 @@ class Handler
     public function addResponse(string $url, ResponseInterface $response): self
     {
         // Put the response in the correct bag
-        if (@preg_match($url, null) !== false) {
+        if (@preg_match($url, '') !== false) {
             $this->responsesByRegex[$url] = $response;
         } else {
             $this->responsesByUrl[$url] = $response;
@@ -171,8 +171,8 @@ class Handler
         }
 
         $response = $response instanceof \Throwable
-            ? \GuzzleHttp\Promise\rejection_for($response)
-            : \GuzzleHttp\Promise\promise_for($response);
+            ? \GuzzleHttp\Promise\Create::rejectionFor($response)
+            : \GuzzleHttp\Promise\Create::promiseFor($response);
 
         return $response->then(
             function (?ResponseInterface $value) use ($request, $options) {
@@ -196,7 +196,7 @@ class Handler
             function ($reason) use ($request, $options) {
                 $this->invokeStats($request, $options, null, $reason);
 
-                return \GuzzleHttp\Promise\rejection_for($reason);
+                return \GuzzleHttp\Promise\Create::rejectionFor($reason);
             }
         );
     }
