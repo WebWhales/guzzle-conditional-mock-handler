@@ -11,6 +11,9 @@
             "role": "Developer"
         }
     ],
+    "scripts": {
+        "test": "phpunit"
+    },
     "keywords": ["guzzle", "http", "mocking"],
     "autoload": {
         "psr-4": {
@@ -23,7 +26,8 @@
         }
     },
     "require": {
-        "php": "^7.2|^8.0|^8.1",
+        "php": "^7.2|^8.0",
+        "guzzlehttp/promises": "^2.0",
         "guzzlehttp/guzzle": "~6.0|~7.0"
     },
     "require-dev": {

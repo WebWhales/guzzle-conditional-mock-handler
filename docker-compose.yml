@@ -1,0 +1,6 @@
+services:
+  web:
+    image: webwhales/for-laravel-apache:php8.2
+    hostname: localhost
+    volumes:
+      - ./:/var/www/html
